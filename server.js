@@ -29,3 +29,17 @@ corsAnywhere.createServer({
 
 // 輸出環境變數狀態（幫助 debug）
 console.log('Environment CORSANYWHERE_WHITELIST:', process.env.CORSANYWHERE_WHITELIST || 'Not set');
+
+
+{
+  "name": "cors-proxy",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "cors-anywhere": "github:consumet/cors-anywhere#master",
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
